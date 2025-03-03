@@ -38,13 +38,9 @@
         <div class="vehicle">
             <img src="https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg" alt="Voiture 3">
             <Mercedes-Benz classe A45 AMG </h3>
-            <p>Prix: 20€</p>
-    </section>
-    
+            <p>Prix: 20€</p>    
     <section id="discord">
         <h2>Discord</h2>
         <p>Rejoignez notre serveur Discord pour plus d'informations :</p>
         <a href="https://discord.gg/FyjNdNDy" target="_blank">Notre Discord</a>
     </section>
-</body>
-</html>
