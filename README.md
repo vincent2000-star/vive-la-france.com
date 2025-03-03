@@ -25,22 +25,19 @@
         <h2>Nos Véhicules</h2>
         <div class="vehicle">
             <img src="https://img.gta5-mods.com/q95/images/2021-cupra-formentor-replace-fivem-kowalski_pau/c9896b-1.png" alt="Voiture 1">
-            <h3>Cupra Formentor 2021/h3>
+            <h3>Cupra Formentor 2021</h3>
             <p>Prix: 20€</p>
-        </div>
         <div class="vehicle">
             <img src="https://img.gta5-mods.com/q85-w800/images/audi-rs3-2020-addon-fivem-animated-tuning-abt/f78b73-1.jpg" alt="Voiture 2">
             <h3>Audi rs3 2020 ABT</h3>
             <p>Prix: 20€</p>
-        </div>
         <div class="vehicle">
             <img src="https://i0.wp.com/gtaland.net/wp-content/uploads/2019/10/1572108405_amggt1_GTALand.net.jpg?fit=800%2C450&ssl=1" alt="Voiture 3">
             <h3Mercedes-Benz AMG GT63 2018</h3>
             <p>Prix: 20€</p>
-        </div>
-  <div class="vehicle">
+        <div class="vehicle">
             <img src="https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg" alt="Voiture 3">
-            <Mercedes-Benz classe A45 AMG</h3>
+            <Mercedes-Benz classe A45 AMG </h3>
             <p>Prix: 20€</p>
     </section>
     
