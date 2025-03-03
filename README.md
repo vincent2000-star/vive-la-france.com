@@ -1,5 +1,3 @@
-# vive-la-france.com
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
