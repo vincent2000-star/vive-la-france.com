@@ -37,8 +37,8 @@
             <p>Prix: 20€</p>
         <div class="vehicle">
             <h3>Mercedes-Benz classe A45 AMG </h3>          
-            <p>Prix: 20€</p>    
             <img src="https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg" alt="Voiture 4">
+            <p>Prix: 20€</p>     
         <div class="vehicle">
             <h3>BMW m3 G81 Competition Touring</h3>
             <img src="https://www.motorstore-france.com/public/img/medium/51jpg_6633a36a502ca6.42277254.jpg" alt="Voiture 5">
