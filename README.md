@@ -109,7 +109,7 @@
     <section id="discord">
         <h2>Discord</h2>
         <p>Rejoignez notre serveur Discord pour plus d'informations :</p>
-        <a href="https://discord.gg/FyjNdNDy" target="_blank">Notre Discord</a>
+        <a href="https://discord.gg/UJZNHxHm" target="_blank">Notre Discord</a>
     </section>
     
     <script>
