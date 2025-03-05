@@ -50,6 +50,6 @@
     </section>
     <div class="pagination">
     <button id="prev" disabled>&#x276E;</button> 
-    <span id="page-number">1</span>
+    <span id="page-number">0</span>
     <button id="next">&#x276F;</button>
     </div>
