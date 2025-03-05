@@ -116,9 +116,9 @@
         const vehicles = [
             { name: "Cupra Formentor 2021", img: "https://img.gta5-mods.com/q95/images/2021-cupra-formentor-replace-fivem-kowalski_pau/c9896b-1.png", price: 20 },
             { name: "Audi RS3 2020 ABT", img: "https://img.gta5-mods.com/q85-w800/images/audi-rs3-2020-addon-fivem-animated-tuning-abt/f78b73-1.jpg", price: 20 },
-            { name: "Mercedes-Benz AMG GT63 2018", img: "https://i0.wp.com/gtaland.net/wp-content/uploads/2019/10/1572108405_amggt1_GTALand.net.jpg?fit=800%2C450&ssl=1", price: 25 },
-            { name: "Mercedes-Benz Classe A45 AMG", img: "https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg", price: 22 },
-            { name: "BMW M3 G81 Competition Touring", img: "https://www.motorstore-france.com/public/img/medium/51jpg_6633a36a502ca6.42277254.jpg", price: 30 }
+            { name: "Mercedes-Benz AMG GT63 2018", img: "https://i0.wp.com/gtaland.net/wp-content/uploads/2019/10/1572108405_amggt1_GTALand.net.jpg?fit=800%2C450&ssl=1", price: 20 },
+            { name: "Mercedes-Benz Classe A45 AMG", img: "https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg", price: 20 },
+            { name: "BMW M3 G81 Competition Touring", img: "https://www.motorstore-france.com/public/img/medium/51jpg_6633a36a502ca6.42277254.jpg", price: 20 }
         ];
         
         function renderVehicles() {
