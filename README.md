@@ -11,6 +11,10 @@
         h1 { color: #333; }
         .vehicle { border-bottom: 1px solid #ddd; padding: 15px; }
         .vehicle img { width: 100%; max-width: 400px; border-radius: 10px; }
+        .pagination { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
+        button { background: #f5f7fa; border: none; padding: 10px; border-radius: 50%; cursor: pointer; }
+        button:disabled { opacity: 0.5; cursor: not-allowed; }
+        #page-number { background: #0e3a66; color: white; padding: 10px 15px; border-radius: 10px; }
     </style>
 </head>
 <body>
@@ -23,34 +27,82 @@
     
     <section id="vehicules">
         <h2>Nos Véhicules</h2>
-        <div class="vehicle">
-            <h3>Cupra Formentor 2021</h3>
-            <img src="https://img.gta5-mods.com/q95/images/2021-cupra-formentor-replace-fivem-kowalski_pau/c9896b-1.png" alt="Voiture 1">
-            <p>Prix: 20€</p>
-        <div class="vehicle">
-            <h3>Audi rs3 2020 ABT</h3>
-            <img src="https://img.gta5-mods.com/q85-w800/images/audi-rs3-2020-addon-fivem-animated-tuning-abt/f78b73-1.jpg" alt="Voiture 2">
-            <p>Prix: 20€</p>
-        <div class="vehicle">
-            <h3>Mercedes-Benz AMG GT63 2018</h3>
-            <img src="https://i0.wp.com/gtaland.net/wp-content/uploads/2019/10/1572108405_amggt1_GTALand.net.jpg?fit=800%2C450&ssl=1" alt="Voiture 3">
-            <p>Prix: 20€</p>
-        <div class="vehicle">
-            <h3>Mercedes-Benz classe A45 AMG </h3>          
-            <img src="https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg" alt="Voiture 4">
-            <p>Prix: 20€</p>     
-        <div class="vehicle">
-            <h3>BMW m3 G81 Competition Touring</h3>
-            <img src="https://www.motorstore-france.com/public/img/medium/51jpg_6633a36a502ca6.42277254.jpg" alt="Voiture 5">
-            <p>Prix: 20€</p>
+        <div class="vehicles-container" id="vehicles-list"></div>
+    </section>
+    
     <section id="discord">
         <h2>Discord</h2>
         <p>Rejoignez notre serveur Discord pour plus d'informations :</p>
         <a href="https://discord.gg/FyjNdNDy" target="_blank">Notre Discord</a>
     </section>
+    
     <div class="pagination">
-    <button id="prev" disabled>&#x276E;</button> 
-    <span id="page-number">0</span>
-    <button id="next">&#x276F;</button>
+        <button id="prev" disabled>&#x276E;</button> 
+        <span id="page-number">1</span>
+        <button id="next">&#x276F;</button>
     </div>
-    const products = Array.from({ length: 20 }, (_, i) => `Produit ${i + 1}`)
+    
+    <script>
+        const vehicles = [
+            { name: "Cupra Formentor 2021", img: "https://img.gta5-mods.com/q95/images/2021-cupra-formentor-replace-fivem-kowalski_pau/c9896b-1.png", price: "20€" },
+            { name: "Audi RS3 2020 ABT", img: "https://img.gta5-mods.com/q85-w800/images/audi-rs3-2020-addon-fivem-animated-tuning-abt/f78b73-1.jpg", price: "20€" },
+            { name: "Mercedes-Benz AMG GT63 2018", img: "https://i0.wp.com/gtaland.net/wp-content/uploads/2019/10/1572108405_amggt1_GTALand.net.jpg?fit=800%2C450&ssl=1", price: "20€" },
+            { name: "Mercedes-Benz Classe A45 AMG", img: "https://img.gta5-mods.com/q85-w800/images/mercedes-classe-a-45-amg-edition-1-add-on-replace/4bf77e-1.jpg", price: "20€" },
+            { name: "BMW M3 G81 Competition Touring", img: "https://www.motorstore-france.com/public/img/medium/51jpg_6633a36a502ca6.42277254.jpg", price: "20€" }
+        ];
+        
+        const itemsPerPage = 4;
+        let currentPage = 1;
+        
+        const vehiclesList = document.getElementById("vehicles-list");
+        const pageNumber = document.getElementById("page-number");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+        
+        function renderVehicles() {
+            vehiclesList.innerHTML = "";
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const visibleVehicles = vehicles.slice(start, end);
+            
+            visibleVehicles.forEach(vehicle => {
+                const div = document.createElement("div");
+                div.classList.add("vehicle");
+                div.innerHTML = `
+                    <h3>${vehicle.name}</h3>
+                    <img src="${vehicle.img}" alt="${vehicle.name}">
+                    <p>Prix: ${vehicle.price}</p>
+                `;
+                vehiclesList.appendChild(div);
+            });
+        }
+        
+        function updatePagination() {
+            pageNumber.textContent = currentPage;
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === Math.ceil(vehicles.length / itemsPerPage);
+        }
+        
+        prevButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderVehicles();
+                updatePagination();
+            }
+        });
+        
+        nextButton.addEventListener("click", () => {
+            if (currentPage < Math.ceil(vehicles.length / itemsPerPage)) {
+                currentPage++;
+                renderVehicles();
+                updatePagination();
+            }
+        });
+        
+        renderVehicles();
+        updatePagination();
+    </script>
+</body>
+</html>
+
+    
