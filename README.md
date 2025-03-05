@@ -53,3 +53,4 @@
     <span id="page-number">0</span>
     <button id="next">&#x276F;</button>
     </div>
+    const products = Array.from({ length: 20 }, (_, i) => `Produit ${i + 1}`)
