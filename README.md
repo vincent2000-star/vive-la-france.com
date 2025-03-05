@@ -4,17 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vive la France RP - Vente de Véhicules</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background: #f4f4f9; }
-        nav { margin-bottom: 20px; background: #333; padding: 10px; border-radius: 5px; }
-        nav a { margin: 10px; text-decoration: none; font-size: 20px; color: white; font-weight: bold; }
-        section { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        .vehicle { border-bottom: 1px solid #ddd; padding: 15px; }
-        .vehicle img { width: 100%; max-width: 400px; border-radius: 10px; }
-        .pagination { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
-        button { background: #f5f7fa; border: none; padding: 10px; border-radius: 50%; cursor: pointer; }
-        button:disabled { opacity: 0.5; cursor: not-allowed; }
-        #page-number { background: #0e3a66; color: white; padding: 10px 15px; border-radius: 10px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background: #000000; /* Fond noir */
+            color: white; /* Texte en blanc */
+        }
+        nav { 
+            margin-bottom: 20px; 
+            background: #333; 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+        nav a { 
+            margin: 10px; 
+            text-decoration: none; 
+            font-size: 20px; 
+            color: white; 
+            font-weight: bold; 
+        }
+        section { 
+            max-width: 800px; 
+            margin: auto; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+            border-radius: 10px; 
+            background: #2c2c2c; /* Fond sombre pour les sections */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1, h2 { 
+            color: white; /* Titres en blanc */
+        }
+        .vehicle { 
+            border-bottom: 1px solid #444; 
+            padding: 15px; 
+        }
+        .vehicle img { 
+            width: 100%; 
+            max-width: 400px; 
+            border-radius: 10px; 
+        }
+        .pagination { 
+            margin-top: 20px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+        }
+        button { 
+            background: #f5f7fa; 
+            border: none; 
+            padding: 10px; 
+            border-radius: 50%; 
+            cursor: pointer; 
+        }
+        button:disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+        }
+        #page-number { 
+            background: #0e3a66; 
+            color: white; 
+            padding: 10px 15px; 
+            border-radius: 10px; 
+        }
     </style>
 </head>
 <body>
@@ -105,4 +158,3 @@
 </body>
 </html>
 
-    
