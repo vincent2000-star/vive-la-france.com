@@ -48,3 +48,8 @@
         <p>Rejoignez notre serveur Discord pour plus d'informations :</p>
         <a href="https://discord.gg/FyjNdNDy" target="_blank">Notre Discord</a>
     </section>
+    <div class="pagination">
+    <button id="prev" disabled>&#x276E;</button> 
+    <span id="page-number">1</span>
+    <button id="next">&#x276F;</button>
+    </div>
